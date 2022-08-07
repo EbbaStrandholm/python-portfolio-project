@@ -133,3 +133,32 @@ def create_hangman():
         print("I")
         print("I")
         print("#-------#")
+
+
+def one_valid_letter():
+    """ This function makes sure that only one letter can be chosen at a time,
+    and it will need to be a letter from a-z """
+    is_letter_valid = False
+    letter = ""
+    while is_letter_valid is False:
+        letter = input("Enter guess letter:\n")
+        letter = letter.strip().upper()
+        # the letter can not be less than 1 or more than one (an input of 0 is
+        # invalid, so is an input of 2 and above!)
+        if len(letter) <= 0 or len(letter) > 1:
+            print("Invalid, letter has to be the length of 1")
+        # the letter will be a letter from A-Z (no comma or number!)
+        elif letter.isalpha():
+            # if the letter has been chosen before it cannot be chosen again
+            if letter in correct_guess_letter or letter in \
+                    incorrect_guess_letter:
+                print("Letter already guessed" + letter + "Please try again!")
+            # if the letter passes every criteria above it will exit the
+            # negative feedback loop and stand as valid
+            else:
+                is_letter_valid = True
+        else:
+            # an error message if the letter chosen is not a letter from a-z
+            print("letter must be from a-z")
+
+    return letter
