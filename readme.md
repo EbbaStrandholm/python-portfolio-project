@@ -1,5 +1,7 @@
 <h1 align="center"> Hangman python game! </h1>
 
+[View the live project here](https://ebba-strandholm-hangman.herokuapp.com/)
+
 <h2>USER EXPERIENCE</h2>
 <p>
     <ul>
