@@ -209,3 +209,26 @@ def check_game_over():
         if all_letters_correct:
             is_game_over = True
             print("You've won! Congratulations! Feel free to try again!")
+
+
+def main():
+    """ Will call the previously written fucntions into a game loop """
+    global is_game_over
+
+    print("!WELCOME TO HANGMAN!")
+    random_word()
+
+    while is_game_over is False:
+        create_hangman()
+        word_before_guess()
+
+        if len(incorrect_guess_letter) > 0:
+            print("Incorrect guesses: ")
+            print(incorrect_guess_letter)
+
+        guess_letter()
+        check_game_over()
+
+
+if __name__ == "__main__":
+    main()
