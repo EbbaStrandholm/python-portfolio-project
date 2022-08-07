@@ -35,9 +35,8 @@ This is a simple game of hangman played in the terminal of the code, the game ch
 <section>
     <h3>Frameworks, libraries and programs used</h3>
     <ul>
-        <li> [Git](https://git-scm.com/) was used to commit to git and then pushed to github using the gitpod terminal </li>
-        <li> [Github](https://github.com/) was used to store the code for the project after it was pushed from git. </li>
-        <li> [Python template](https://github.com/Code-Institute-Org/python-essentials-template) from Code Institute was used to import and install the necessart libraries and other good files to make a good up and running python project </li>
+        <li><a href=(https://git-scm.com/)>Git</a> was used to commit to git and then pushed to github using the gitpod terminal </li>
+        <li><a href=(https://github.com/)>Github</a> was used to store the code for the project after it was pushed from git. </li>
+        <li><a href=(https://github.com/Code-Institute-Org/python-essentials-template)>Python Template</a> from Code Institute was used to import and install the necessart libraries and other good files to make a good up and running python project </li>
     </ul>
 </section>
-
