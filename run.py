@@ -16,3 +16,19 @@ If all lives has been lost, the hangman drawing will be completed and the
 import random
 import time
 from listofwords import list_of_words
+
+
+# variable for correctly guessed letters (global)
+correct_guess_letter = []
+
+# variable for incorrectly guessed letters (global)
+incorrect_guess_letter = []
+
+# variable for randomly chosen word (global)
+random_chosen_words = ""
+
+# variable for remaining lives left (global)
+lives = 6
+
+# variable for game over (global)
+is_game_over = False
