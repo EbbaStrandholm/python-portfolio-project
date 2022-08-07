@@ -41,3 +41,19 @@ def random_word():
     random.seed(time.time())
     random_chosen_words = random.choice(list_of_words)
     random_chosen_words = random_chosen_words.upper()
+
+
+def word_before_guess():
+    """will print out dashes where the yet to be guessed letters of the word"""
+    global correct_guess_letter
+    global random_chosen_words
+
+    for i in range(0, len(random_chosen_words)):
+        letter = random_chosen_words[i]
+        # print the correctly guessed letter
+        if letter in correct_guess_letter:
+            print(letter, end=" ")
+        # print an a dash for the yet to be guessed letters
+        else:
+            print("_", end=" ")
+    print("")
