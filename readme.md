@@ -44,3 +44,27 @@ This is a simple game of hangman played in the terminal of the code, the game ch
 [Python template](https://github.com/Code-Institute-Org/python-essentials-template) from Code Institute was used to import and install the necessart libraries and other good files to make a good up and running python project
 
 </section>
+
+<h2>TESTING</h2>
+
+[PEP8](http://pep8online.com/) the projects code, both the listofwords.py file and the run.py file, was run through the pep8 online check without any notifications of any errors
+
+<br>
+
+<p>
+The code was also continuously debugged inside gitpod, there are some warnings still active, which react to there being no assigned value to the global variable, but as the game runs these variable will update and the game runs smoothly, so I have decided to not mind these warnings as there has been no proof of them causing trouble for my project code. 
+</p>
+
+<br>
+
+<p>
+There is also some infos active which wants there to be a change in the naming style of the global variables, which I have decided against as the lower case naming style works just as well for this project, and makes (for me), an overall much cleaner look.
+</p>
+
+<br>
+
+<p>
+While in the early stages of testing my code in the terminal, no area for input was given and the game started, but couldn't be played by the user, this was solved by changing from the recommended enumerate function to an range(0, len(accepted words)) function. This is pointed out in the infos when debugging, but as the recommended enumerate would not work with this project I have decided to not use that recommendation and instead keep to the range fuunction previously mentioned. 
+    <p>Another issue I ran into was that no matter if the letter was correctly guessed or not the computer would not count it as correct, and hence the player could only ever loose the game. This issue was solved as I found a typing error where I had mistakenly written append.lower() instead of the append.upper(). This made the computer compare two different things as it is case sensitive, once that was fixed the game ran smoothly without any issues.
+    </p>
+</p>
