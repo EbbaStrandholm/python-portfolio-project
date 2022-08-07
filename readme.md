@@ -47,7 +47,7 @@ This is a simple game of hangman played in the terminal of the code, the game ch
 
 <h2>TESTING</h2>
 
-[PEP8](http://pep8online.com/) the projects code, both the listofwords.py file and the run.py file, was run through the pep8 online check without any notifications of any errors
+[PEP8](http://pep8online.com/) checks the projects code, both the listofwords.py file and the run.py file, was run through the pep8 online check without any notifications of any errors
 
 <br>
 
@@ -68,3 +68,32 @@ While in the early stages of testing my code in the terminal, no area for input 
     <p>Another issue I ran into was that no matter if the letter was correctly guessed or not the computer would not count it as correct, and hence the player could only ever loose the game. This issue was solved as I found a typing error where I had mistakenly written append.lower() instead of the append.upper(). This made the computer compare two different things as it is case sensitive, once that was fixed the game ran smoothly without any issues.
     </p>
 </p>
+
+<h2>DEPLOYMENT</h2>
+<h3>Github pages and Heroku</h3>
+<p>
+
+1. Log into github and locate the [Github Repository](https://github.com/EbbaStrandholm/python-portfolio-project)
+2. At the top of the repository locate the settings button
+3. Scroll down the page until you find the github pages sectino
+4. Under "source" click the dropdown called "none" and select "master branch"
+5. The page will refresh and published link will now be available
+6. 
+
+</p>
+
+<h2>CREDITS</h2>
+
+<p>
+As this project is a resubmission I was a little short on time, so I chose to follow a tutorial for a hangman game on youtube but making a different list in a separate file, the words used for the game is different and so are the names of the definitions and style of comments as well.
+</p>
+
+1. [tutorial from CS students](https://www.youtube.com/watch?v=ynwB-QfOPRw&t=305s) This is the tutorial which I followed to get a working hangman game for this python project
+2. [tutorial from kite](https://www.youtube.com/watch?v=m4nEnsavl6w&t=135s) This tutorial gave me the idea of creating a second python file which contains the words of which the computer will randomly choose from, but the contents of the list are my own.
+3. [Python template](https://github.com/Code-Institute-Org/python-essentials-template) was referenced to create an appropriate readme.md file for this project
+
+<h3>Acknowledgments</h3>
+
+1. My mentor for continous support throughout this project
+2. Friends and family for proof reading and testing my project to see if it works as a player and not the creator
+3. The Code Institute student care team for the help with resubmission
