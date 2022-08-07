@@ -45,6 +45,10 @@ This is a simple game of hangman played in the terminal of the code, the game ch
     
 [Python template](https://github.com/Code-Institute-Org/python-essentials-template) from Code Institute was used to import and install the necessart libraries and other good files to make a good up and running python project
 
+<br>
+
+[Heroku](https://heroku.com) was used to deploy the project
+
 </section>
 
 <h2>TESTING</h2>
