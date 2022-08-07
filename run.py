@@ -32,3 +32,12 @@ lives = 6
 
 # variable for game over (global)
 is_game_over = False
+
+
+def random_word():
+    """will return randomly chosen word for the hangman game"""
+    global random_chosen_words
+
+    random.seed(time.time())
+    random_chosen_words = random.choice(list_of_words)
+    random_chosen_words = random_chosen_words.upper()
