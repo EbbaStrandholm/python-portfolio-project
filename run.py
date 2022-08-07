@@ -162,3 +162,22 @@ def one_valid_letter():
             print("letter must be from a-z")
 
     return letter
+
+
+def guess_letter():
+    """ This fucntion will check wether the answer is correct or incorrect and
+    update the global variables accordingly """
+    global correct_guess_letter
+    global incorrect_guess_letter
+    global lives
+
+    letter = one_valid_letter()
+    # if the guessed letter is in the randomly chosen word, append the letter
+    # to correct_guess_letter
+    if letter in random_chosen_words:
+        correct_guess_letter.append(letter)
+    else:
+        # if the the chosen word is incorrect remove one life and append to
+        # the incorrect_guessed_letter
+        incorrect_guess_letter.append(letter)
+        lives -= 1
