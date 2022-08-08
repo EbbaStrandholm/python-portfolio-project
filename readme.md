@@ -79,11 +79,9 @@ While in the early stages of testing my code in the terminal, no area for input 
 <p>
 
 1. Log into github and locate the [Github Repository](https://github.com/EbbaStrandholm/python-portfolio-project)
-2. At the top of the repository locate the settings button
-3. Scroll down the page until you find the github pages sectino
-4. Under "source" click the dropdown called "none" and select "master branch"
-5. The page will refresh and published link will now be available
-6. 
+2. After creating a heroku account, add the necessary Config_vars and buildpacks so that the app can be deployed
+3. choose github for deployment method, and after linking the account search for the repository name and press connect
+4. then scroll down and choose enable automatic deploys so that the app will run when the code is updated
 
 </p>
 
